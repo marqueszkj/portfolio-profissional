@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Laura Marques, estudante de Ciências da Computação.">
+  <title>Laura Marques | Portfólio profissional</title>
+
+  <!-- Vínculo com o arquivo de estilos (fica na mesma pasta do index.html) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Link para quem navega pelo teclado pular direto ao conteúdo -->
+  <a class="pular-menu" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- CABEÇALHO E MENU -->
+  <header class="cabecalho">
+    <p class="logo">Laura Marques</p>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#tecnicas">Competências técnicas</a></li>
+        <li><a href="#comportamentais">Competências comportamentais</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- APRESENTAÇÃO -->
+    <section class="apresentacao" aria-labelledby="titulo-apresentacao">
+      <h1 id="titulo-apresentacao">Laura Marques</h1>
+      <p class="titulo-profissional">Estudante de Ciências da Computação</p>
+      <p>
+        <a class="botao" href="#projetos">Ver projetos</a>
+        <a class="botao botao-secundario" href="#contato">Entrar em contato</a>
+      </p>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre mim</h2>
+      <p>
+        Sou estudante de Ciências da Computação e estou no início da minha
+        trajetória acadêmica. Ainda estou explorando as diferentes áreas da
+        computação para descobrir com qual delas mais me identifico.
+      </p>
+      <h3>Áreas de interesse</h3>
+      <ul class="etiquetas">
+        <li>Cibersegurança</li>
+        <li>Design</li>
+      </ul>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" aria-labelledby="titulo-formacao">
+      <h2 id="titulo-formacao">Formação</h2>
+      <article class="cartao">
+        <h3>Graduação em Ciências da Computação</h3>
+        <p>Cursando o 2º semestre.</p>
+        <!-- INFORMAÇÃO A SER PREENCHIDA (opcional): nome da instituição -->
+      </article>
+      <!-- Cursos e certificações: nenhum por enquanto. Adicione aqui quando houver. -->
+    </section>
+
+    <!-- COMPETÊNCIAS TÉCNICAS -->
+    <section id="tecnicas" aria-labelledby="titulo-tecnicas">
+      <h2 id="titulo-tecnicas">Competências técnicas</h2>
+      <p>Todas em nível iniciante: estou aprendendo e praticando.</p>
+
+      <div class="grade">
+        <article class="cartao">
+          <h3>Linguagens</h3>
+          <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Web</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>VS Code</li>
+          </ul>
+        </article>
+
+        <article class="cartao">
+          <h3>Design</h3>
+          <ul>
+            <li>Canva</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMPETÊNCIAS COMPORTAMENTAIS -->
+    <section id="comportamentais" aria-labelledby="titulo-comportamentais">
+      <h2 id="titulo-comportamentais">Competências comportamentais</h2>
+
+      <div class="grade">
+        <article class="cartao">
+          <h3>Organização</h3>
+          <p>Uso listas de tarefas para me organizar.</p>
+        </article>
+
+        <article class="cartao">
+          <h3>Trabalho em equipe</h3>
+          <p>
+            Participo de trabalhos em grupo na faculdade e, no ambiente de
+            trabalho, contribuo com sugestões sobre como as tarefas podem ser feitas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" aria-labelledby="titulo-projetos">
+      <h2 id="titulo-projetos">Projetos</h2>
+
+      <div class="grade">
+        <article class="cartao">
+          <h3>Apresentação sobre Engenharia de Software</h3>
+          <p class="detalhe">Trabalho de faculdade, em grupo</p>
+          <p>
+            Apresentação de slides sobre a área de Engenharia de Software.
+            Estudei o conteúdo e apresentei a parte sobre como se tornar
+            engenheira de software.
+          </p>
+          <p>
+            <strong>Aprendizado:</strong> percebi que essa não é a área que mais
+            me atrai, o que me ajudou a direcionar meus interesses para
+            cibersegurança e design.
+          </p>
+          <!-- Sem link e sem imagem por enquanto. Se houver, adicione um botão aqui:
+               <a class="botao" href="LINK-DO-PROJETO">Ver projeto</a> -->
+        </article>
+      </div>
+    </section>
+
+    <!-- CURRÍCULO -->
+    <section id="curriculo" aria-labelledby="titulo-curriculo">
+      <h2 id="titulo-curriculo">Currículo</h2>
+      <p>Baixe meu currículo em PDF.</p>
+      <!-- ATENÇÃO: adicione o arquivo curriculo.pdf dentro da pasta assets/
+           (nome em minúsculas e sem acento). Sem ele, o botão abre uma página de erro. -->
+      <p>
+        <a class="botao" href="assets/curriculo.pdf" download>Baixar currículo (PDF)</a>
+      </p>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Contato</h2>
+      <ul class="lista-contato">
+        <li>
+          <a class="botao" href="mailto:alaura.marques007@gmail.com">E-mail</a>
+          <span>alaura.marques007@gmail.com</span>
+        </li>
+        <li>
+          <a class="botao" href="https://github.com/marqueszkj" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span>github.com/marqueszkj</span>
+        </li>
+        <!-- LinkedIn: não informado. Se quiser incluir, copie o item acima e troque o link. -->
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ COM AUTORIA -->
+  <footer class="rodape">
+    <p>Portfólio criado por Laura Marques.</p>
+    <p>Projeto da disciplina Design Profissional, 2026.</p>
+  </footer>
+</body>
+</html>

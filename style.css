@@ -1,0 +1,349 @@
+/* ==========================================================
+   Portfólio de Laura Marques
+   Tema claro, criativo: rosa, azul e verde bebê.
+   Texto em azul escuro para garantir boa leitura.
+   ========================================================== */
+
+/* ---------- 1. CORES, FONTES E MEDIDAS (altere aqui) ---------- */
+:root {
+    /* Cores pastel (fundos, cartões e botões) */
+    --rosa: #f8c8dc;
+    --azul: #cfe5f7;
+    --verde: #d0f0dc;
+    --fundo: #fff8fb;
+  
+    /* Cor do texto e dos contornos */
+    --texto: #14274e;
+  
+    /* Fontes disponíveis em quase todos os computadores e celulares */
+    --fonte: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  
+    /* Medidas */
+    --espaco: 1.5rem;
+    --raio: 18px;
+    --contorno: 2px solid var(--texto);
+    --sombra: 5px 5px 0 var(--texto);
+  }
+  
+  /* ---------- 2. BASE ---------- */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* evita que o menu cubra o título ao clicar */
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--fonte);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--texto);
+    background-color: var(--fundo);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+  }
+  
+  h1 {
+    font-size: clamp(2.4rem, 8vw, 4.2rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  p,
+  ul {
+    margin: 0 0 1rem;
+  }
+  
+  a {
+    color: var(--texto);
+  }
+  
+  /* ---------- 3. FOCO VISÍVEL (navegação por teclado) ---------- */
+  a:focus-visible {
+    outline: 3px solid var(--texto);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px #ffffff;
+  }
+  
+  /* ---------- 4. LINK "IR PARA O CONTEÚDO" ---------- */
+  .pular-menu {
+    position: absolute;
+    left: 1rem;
+    top: -4rem; /* escondido até receber o foco do teclado */
+    padding: 0.6rem 1rem;
+    background: var(--verde);
+    border: var(--contorno);
+    border-radius: var(--raio);
+    font-weight: bold;
+    z-index: 20;
+  }
+  
+  .pular-menu:focus {
+    top: 1rem;
+  }
+  
+  /* ---------- 5. CABEÇALHO E MENU ---------- */
+  .cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding: 0.8rem var(--espaco);
+    background-color: var(--azul);
+    border-bottom: var(--contorno);
+  }
+  
+  .logo {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu a {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .menu a:hover {
+    background-color: var(--rosa);
+  }
+  
+  /* ---------- 6. ÁREA PRINCIPAL ---------- */
+  main {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 0 var(--espaco);
+  }
+  
+  main > section {
+    padding: 3rem 0 1rem;
+  }
+  
+  /* Título de cada seção com um marcador de cor embaixo */
+  main > section > h2 {
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    border-bottom: 10px solid var(--rosa);
+  }
+  
+  /* ---------- 7. APRESENTAÇÃO (primeira seção) ---------- */
+  .apresentacao {
+    margin-top: 2rem;
+    padding: 3rem var(--espaco) 2.5rem !important;
+    border: var(--contorno);
+    border-radius: 28px;
+    box-shadow: var(--sombra);
+    background-color: var(--verde);
+    background-image:
+      radial-gradient(circle at 92% 12%, var(--rosa) 0 90px, transparent 91px),
+      radial-gradient(circle at 80% 95%, var(--azul) 0 120px, transparent 121px);
+  }
+  
+  .titulo-profissional {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ---------- 8. BOTÕES ---------- */
+  .botao {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.65rem 1.3rem;
+    background-color: var(--rosa);
+    color: var(--texto);
+    font-weight: bold;
+    text-decoration: none;
+    border: var(--contorno);
+    border-radius: 999px;
+    box-shadow: 3px 3px 0 var(--texto);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .botao:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--texto);
+  }
+  
+  .botao-secundario {
+    background-color: #ffffff;
+  }
+  
+  /* ---------- 9. ETIQUETAS (áreas de interesse) ---------- */
+  .etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .etiquetas li {
+    padding: 0.3rem 1rem;
+    background-color: var(--azul);
+    border: var(--contorno);
+    border-radius: 999px;
+    font-weight: bold;
+  }
+  
+  .etiquetas li:nth-child(even) {
+    background-color: var(--rosa);
+  }
+  
+  /* ---------- 10. CARTÕES E GRADE ---------- */
+  /* A grade coloca os cartões lado a lado e empilha no celular */
+  .grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: var(--espaco);
+  }
+  
+  .cartao {
+    padding: 1.3rem;
+    background-color: var(--azul);
+    border: var(--contorno);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+  }
+  
+  /* Cores alternadas: rosa, azul, verde */
+  .cartao:nth-child(3n + 1) {
+    background-color: var(--rosa);
+  }
+  
+  .cartao:nth-child(3n + 2) {
+    background-color: var(--azul);
+  }
+  
+  .cartao:nth-child(3n) {
+    background-color: var(--verde);
+  }
+  
+  .cartao ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  .cartao p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .detalhe {
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+  
+  /* Cartão sozinho (ex.: Formação) não estica na tela toda */
+  #formacao .cartao {
+    max-width: 34rem;
+  }
+  
+  /* ---------- 11. CONTATO ---------- */
+  .lista-contato {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-contato li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .lista-contato .botao {
+    margin: 0;
+    min-width: 7rem;
+    text-align: center;
+  }
+  
+  /* Permite quebrar e-mails longos no celular */
+  .lista-contato span {
+    overflow-wrap: anywhere;
+  }
+  
+  /* ---------- 12. RODAPÉ ---------- */
+  .rodape {
+    margin-top: 4rem;
+    padding: 1.5rem var(--espaco);
+    text-align: center;
+    background-color: var(--rosa);
+    border-top: var(--contorno);
+  }
+  
+  .rodape p {
+    margin: 0.2rem 0;
+  }
+  
+  /* ---------- 13. TELAS PEQUENAS (celular) ---------- */
+  @media (max-width: 600px) {
+    body {
+      font-size: 1rem;
+    }
+  
+    .cabecalho {
+      position: static; /* no celular o menu rola junto com a página */
+    }
+  
+    .menu a {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+    }
+  
+    main > section {
+      padding-top: 2rem;
+    }
+  
+    .apresentacao {
+      padding: 2rem 1.2rem 1.5rem !important;
+    }
+  
+    .cartao,
+    .apresentacao {
+      box-shadow: 3px 3px 0 var(--texto);
+    }
+  }
+  
+  /* ---------- 14. RESPEITA QUEM PREFERE MENOS MOVIMENTO ---------- */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  
+    .botao {
+      transition: none;
+    }
+  }
