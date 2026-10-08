@@ -83,6 +83,8 @@ Desenvolvido por **Laura Marques**, estudante de Ciências da Computação.
 
 - GitHub: [github.com/marqueszkj](https://github.com/marqueszkj)
 
+  
+
 Projeto realizado na disciplina Design Profissional, sob orientação do Prof. Vinicius Alves Rodrigues.
 
 ## Licença
